@@ -108,7 +108,11 @@ return false;
 </head>
 <body>
 
-	
+	<!-- For going up when scrolling -->
+	<div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- End -->
 
     <!-- Nav-bar Start -->
         <nav class="navbar">
@@ -595,26 +599,7 @@ return false;
     
     <script type="text/javascript">
           // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
-    });
+   
     /*start of ctrl disable*/
 document.onkeydown = function(e) {
 if(event.keyCode == 123) {
